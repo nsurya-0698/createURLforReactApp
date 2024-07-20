@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 import svgr from '@svgr/rollup'; // import svgr plugin
 
 export default defineConfig({
-  base: '/createURLForReactApp/',
+  base: '/personal-portfolio/',
   plugins: [react(), svgr()],
 });
