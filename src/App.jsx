@@ -45,6 +45,7 @@ class App extends Component {
               <div className="content-container">
                 <Header />
                 <Main />
+                
                 <About />
                 <Experience />
                 <Contact />
