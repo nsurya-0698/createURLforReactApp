@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { Component } from 'react';
+import { VscGithubAlt } from 'react-icons/vsc';
+import { FiLinkedin } from 'react-icons/fi';
+import './App.css';
+import logo from './assets/logo.svg'; // Use standard import for SVG
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+import Header from './components/Header';
+import Main from './components/Main';
+import About from './components/About';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+class App extends Component {
+  state = { isLoading: true };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 1000);
+  }
+
+  render() {
+    const { isLoading } = this.state;
+
+    return (
+      <div className="App">
+        <div className="preloader">
+          {isLoading ? (
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+            </header>
+          ) : (
+            <div className="main-container">
+              <div className="social-icons-container">
+                <a href="https://github.com/nsurya-0698" target="_blank" rel="noopener noreferrer">
+                  <VscGithubAlt className="social-icons git" />
+                </a>
+                <a href="https://www.linkedin.com/in/surya-teja-nammi/" target="_blank" rel="noopener noreferrer">
+                  <FiLinkedin className="social-icons linkedin" />
+                </a>
+                <span className="v-line"></span>
+              </div>
+              <div className="content-container">
+                <Header />
+                <Main />
+                <About />
+                <Experience />
+                <Contact />
+                <Footer />
+              </div>
+              <div className="mail-container">
+                <a className="mail-anchor" href="mailto:tejanammim1@gmail.com">
+                  <p className="mail">tejanammim1@gmail.com</p>
+                </a>
+                <span className="v-line"></span>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    );
+  }
 }
 
-export default App
+export default App;
