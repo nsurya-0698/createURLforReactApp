@@ -1,6 +1,6 @@
-import proPic from './ProffPic.jpeg'
+import React from 'react';
+import proPic from './ProffPic.jpeg';
 import './index.css';
-
 
 const About = () => {
     return (
@@ -16,12 +16,11 @@ const About = () => {
                     </p>
                 </div>
                 <div className="personal-image-container">
-                    <img className="personalpic" src ={proPic} alt="PersonalPic"/>
-                    {/* <img className="personalpic" src ={PPimg}/> */}
+                    <img className="personalpic" src={proPic} alt="PersonalPic" />
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default About
+export default About;

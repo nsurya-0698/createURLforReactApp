@@ -29,7 +29,7 @@ class Header extends Component {
 
         return (
             <div className={`header-container ${topVal !== 0 ? 'updatetop' : ''}`} onScroll={this.scrolled}>
-                <a href="https://suryatejanammi.netlify.app/">
+                <a href="https://nsurya-0698.github.io/createURLForReactApp/">
                     <img className="site-logo" src={logo} alt="logo" />
                 </a>
                 <div className={`overlay ${hamburgerClicked ? "" : "burger-data"} ${makeBlur ? "" : "hider"}`}>

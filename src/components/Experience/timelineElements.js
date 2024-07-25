@@ -1,8 +1,8 @@
 let timelineElements = [
   {
     id: 1,
-    title: "full Stack Developer at Optum Global Solutions (United Health Group)",
-    location: "Minnesota, USA.",
+    title: "Full Stack Developer at Optum Global Solutions (United Health Group)",
+    location: "Minnesota, USA",
     description:"As a Full Stack Developer at Optum Global Solutions (United Health Group), I developed Spring Boot microservices using JPA, Hibernate, and REST for claim processing in the ICE healthcare application. I designed PostgreSQL schemas for efficient data storage, employed Azure Functions for logging, utilized Grafana for monitoring, and deployed microservices with Jenkins, GitHub, Docker, and Kubernetes. Additionally, I implemented React interfaces for seamless claim data access.",
     buttonText: "Read more",
     date: "02/2022 - Present",
@@ -30,7 +30,7 @@ let timelineElements = [
   {
     id: 4,
     title: "Junior Software Engineer at iB Hubs",
-    location: "Karnool, India",
+    location: "Kurnool, India",
     description:
       "As a Junior Software Engineer at iB Hubs - CCBP Learning Platform in India, I developed a web-based task management application using Angular and Node.js to streamline project coordination. I implemented user authentication and authorization features, enhancing application security and user privacy, and integrated real-time updates using WebSocket technology, improving collaboration and task visibility among team members. Additionally, I earned certifications in Web Application Development and Core Personality Strengths.",
     buttonText: "Read more",
@@ -42,8 +42,9 @@ let timelineElements = [
     title: "Aditya Engineering College",
     location: "India, Andhra Pradesh",
     description:
-      "Realated Subjects: Advanced Data Structures, C Language, Operating Systems",
-    date: "2015 - 2019",
+      "I earned a Bachelor of Technology in Electrical and Computer engineering from Aditya Engineering College, achieving a 2.8/4.0 of . My coursework included Advanced Data Structures, C Language, and Operating Systems. I also completed various projects, which are available on my GitHub.",
+    buttonText: "GitHub",
+    date: "05/2015 -06/2019",
     icon: "school",
   },
 ];

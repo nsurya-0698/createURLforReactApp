@@ -1,5 +1,6 @@
 .about-container{
     color: #ffffff;
+    padding-bottom:15%;
 }
 .about-header{
     color: #ccd6f6;
@@ -16,6 +17,7 @@
     }
     .personalpic{
         height: 220px;
+        
     }
     .technologies{
         padding: 20px;
