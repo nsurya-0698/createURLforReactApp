@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import { VscGithubAlt } from 'react-icons/vsc';
 import { FiLinkedin } from 'react-icons/fi';
 import './App.css';
+// index.js or App.jsx
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'owl.carousel';
 import logo from './assets/logo.svg'; // Use standard import for SVG
 
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
 
 import Header from './components/Header';
 import Main from './components/Main';
@@ -11,6 +18,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Recommendations from './components/Recommendations/Recommendations'; // Correct import path
 
 class App extends Component {
   state = { isLoading: true };
@@ -47,6 +55,7 @@ class App extends Component {
                 <Main />
                 <About />
                 <Experience />
+                <Recommendations />
                 <Contact />
                 <Footer />
               </div>
