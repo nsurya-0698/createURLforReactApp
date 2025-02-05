@@ -37,6 +37,7 @@ const EmailForm = () => {
       // Create a new object that contains dynamic template params
       const templateParams = {
         from_name: name,
+        
         from_email: email,
         from_phone: phone,
         to_name: 'Surya',
