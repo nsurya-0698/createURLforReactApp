@@ -1,19 +1,38 @@
+import React from 'react';
+import proPic from './ProffPic.jpeg';
 import './index.css';
 
 const Main = () => {
-    return(
+    return (
         <div className="opening-container" id="home">
             <div className="opening-content">
                 <p className="intro">Hi, my name is</p>
                 <h1 className="name-header">Surya Teja Nammi</h1>
-                <h1 className="passion-header">Building Robust Full Stack Solutions</h1>
-                <p className="statement">I'm a Software Engineer with 4.5+ years of expertise in full stack development. I specialize in creating and optimizing platform performance, leading global upgrade projects, and developing robust, scalable applications. Currently, I focus on building accessible, human-centered products.</p>
-                <a href="#contact" className="nav-things">
-                    <button className="get-in-touch">Get in touch</button>
-                </a>
+                <h1 className="passion-header">Architecting Scalable Cloud & Full-Stack Solutions</h1>
+                <div className="main-content-wrapper">
+                    <div className="text-content">
+                        <p className="statement">
+                        AWS-Certified Full Stack Developer with 6+ years of experience in building enterprise-grade solutions for healthcare and fintech domains. 
+                        Specialized in Spring Boot microservices, Angular applications, and cloud-native architectures deployed on AWS/Azure. 
+                        Proven success in optimizing system performance by 40%, reducing deployment times by 25% through CI/CD pipelines, 
+                        and implementing real-time processing with Kafka/WebSockets. Certified AWS Solutions Architect with expertise in 
+                        serverless computing (Lambda), containerization (Docker/Kubernetes), and event-driven architectures.
+                        </p>
+                        <div className="certification-badge">
+                            {/* Add your AWS certification badge image here */}
+                            <span className="aws-cert">AWS Solutions Architect - Certified</span>
+                        </div>
+                        <a href="#contact" className="nav-things">
+                            <button className="get-in-touch">Connect</button>
+                        </a>
+                    </div>
+                    <div className="personal-image-container">
+                        <img className="personalpic" src={proPic} alt="Professional Headshot" />
+                    </div>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Main;
