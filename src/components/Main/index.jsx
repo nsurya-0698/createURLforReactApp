@@ -18,10 +18,6 @@ const Main = () => {
                         and implementing real-time processing with Kafka/WebSockets. Certified AWS Solutions Architect with expertise in 
                         serverless computing (Lambda), containerization (Docker/Kubernetes), and event-driven architectures.
                         </p>
-                        <div className="certification-badge">
-                            {/* Add your AWS certification badge image here */}
-                            <span className="aws-cert">AWS Solutions Architect - Certified</span>
-                        </div>
                         <a href="#contact" className="nav-things">
                             <button className="get-in-touch">Connect</button>
                         </a>

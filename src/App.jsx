@@ -32,7 +32,7 @@ function App() {
         </div>
         <div className="mail-container">
           <a className="mail-anchor" href="mailto:tejanammim1@gmail.com">
-            <p className="mail">tejanammim1@gmail.com</p>
+            <p className="mail">nammiteja087@gmai.com</p>
           </a>
           <span className="v-line"></span>
         </div>
